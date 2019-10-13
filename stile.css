@@ -1,0 +1,417 @@
+* {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    cursor: crosshair;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    z-index: 1;
+    position: fixed;
+    background: rgba(5, 4, 2, 0.70);
+    top: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.sfondo-superiore{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment:fixed;
+    top:0;
+}
+    .sfondo-superiore p {
+        background-color: rgba(255, 255, 255, 0.90);
+        padding: 20px;
+        width: 95%;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+        border-radius:10px;
+    }
+.bgsfondohome{
+    background-image: url(nightcorea.png);
+}
+.bgsfondoguerra{
+    background-image: url(incontro.jpg);
+}
+.bgsfondoadiritti{
+    background-image: url(statue.jpg);
+}
+.bgsfondoist {
+    background-image: url(bandiere.jpg);
+}
+.bgsfondoinfo {
+    background-image: url(lab_nord.jpg);
+}
+.bgsfondoazienda {
+    background-image: url(bilancio.jpeg);
+}
+.bgsfondoingl {
+    background-image: url(korea_exchange.jpg);
+}
+.bgsfondoita {
+    background-image: url(Duomo-di-Milano-Bombardato.jpg);
+}
+.bgsfondoindici {
+    background-image: url(indici.jpg);
+}
+.bgsfondojuche {
+    background-image: url(juche.jpeg);
+}
+.bgsfondobiblografia {
+    background-image: url(sitografia_biblografia.jpg);
+}
+.bgsfondomate{
+    background-image: url(lavagna_l.jpg);
+}
+h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 290px;
+    opacity: 1;
+}
+#title {
+    display: block;
+    margin-top: 44px;
+    background: rgba(5, 4, 2, 0.70);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+#title h1 {
+    text-align:center;
+    letter-spacing: 10px;
+    font-size:20px;
+    width:100%;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+    margin:0px;
+    padding:10px;
+}
+#title a {
+    color: crimson;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+hr {
+    color: rgb(162,0,50);
+    border-color: rgb(162,0,50);
+    background-color: rgb(162,0,50);
+    margin: 0px;
+}
+ul#nav{
+    margin-top:12px;
+    margin-bottom:12px;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+
+}
+ul#nav li{
+    list-style-type:none;
+    position: relative;
+    display:inline;
+}
+ul#nav li a{
+    color:#8F8F8F;
+    transition:1s;
+    text-transform: uppercase;
+    padding:13px;
+    padding-left:45px;
+    padding-right:45px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+#nav li a:hover{
+    background: none repeat scroll 0 0 rgba(5, 4, 2, 0.80);
+    color:white;
+}
+#nav .attivo{
+    color:#FEFEE9;
+}
+ul#nav li ul {
+    margin: 2px 0 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 9999;
+    background: none repeat scroll 0 0 rgba(5, 4, 2, 0.70);
+    transition: all ease-in-out 250ms;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+ul#nav li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+ul#nav li ul li{
+    	float: none;
+	display: block;
+}
+ul#nav li ul li a {
+        padding: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: inherit;
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        
+    }
+#body {
+    display: inline-block;
+    width: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+p#sitografia {
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 20px;
+    width: 85%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top:200px;
+    margin-bottom:200px;
+    text-align:center;
+}
+#aside {
+    width:10%;
+    float:left;
+    height:500px;
+    text-align:left;
+    padding-left:40px;
+    padding-right:80px;
+}
+#aside li{
+    list-style-type:none;
+    display:block;
+    padding: 10px;
+    font-size:14px;
+    font-weight:bold;
+}
+#aside a:hover{
+    font-style:italic;
+    color:#FF8C69;
+}
+#aside .attivo{
+    font-style:italic;
+    color:red;
+}
+h1{
+    font-size: 50px;
+    color:black;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 0px;
+    letter-spacing: 3px;
+}
+#section {
+    float: left;
+    width: 70%;
+    text-align: left;
+    background-color: #FFF;
+    font-size: 18px;
+    letter-spacing: 1px
+}
+#section h3 {
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.47);
+}
+#section table p{
+    padding:10px 0px;
+    width:80%;
+    text-align:center;
+    margin-left:10%;
+}
+.pimage{
+    margin-top:5px;
+}
+.pimage .image-15-left {
+    margin-bottom:10%;
+}
+#section table .pimage p {
+    padding: 10px 0px;
+    width: 50%;
+    text-align: center;
+    display:inline;
+    margin-left:0%;
+    }
+#section table tr td{
+    width:50%;
+}
+#form{
+    width:60%;
+    text-align:center;
+}
+#form table tr td {
+    width: 25%;
+    text-align:right;
+    padding:2px 5px;
+}
+#form a{
+    color:red;
+}
+#form a:hover {
+    color: #FF8C69;
+    font-style:italic;
+}
+p {
+    text-align: justify;
+   
+}
+.cit{
+    text-align:center;
+    font-style:italic;
+    color:lightslategrey;
+}
+.cit h3{
+    font-style:normal;
+    color:black;
+}
+.cit p{
+    text-align:center;
+}
+.image-15-right {
+    width: 15%;
+    float: right;
+    padding: 0px 15px;
+    padding-right: 0px;
+}
+.image-15-left {
+    width: 15%;
+    float: left;
+    padding: 0px 15px;
+    padding-left: 0px;
+}
+.image-20-right {
+    width: 20%;
+    float: right;
+    padding: 0px 15px;
+    padding-right: 0px;
+}
+.image-30-left {
+    width: 30%;
+    float: left;
+    padding: 0px 15px;
+    padding-left: 0px;
+}
+.image-30-right {
+    width: 30%;
+    float: right;
+    padding: 0px 15px;
+    padding-right: 0px;
+}
+.image-50-right {
+    width: 48%;
+    float: right;
+    padding: 0px 15px;
+    padding-right:0px;
+}
+.image-50-left {
+    width: 48%;
+    float: left;
+    padding: 0px 15px;
+    padding-left: 0px;
+}
+.image-right {
+    width: 100%;
+    float: right;
+    padding: 0px 15px;
+    padding-right: 0px;
+}
+
+.image-left {
+    width: 100%;
+    float: left;
+    padding: 0px 15px;
+    padding-left: 0px;
+}
+#footer{
+    background-color:#F5F5F5;
+    text-align:center;
+    clear:both;
+}
+.indexphoto {
+    width: 50%;
+    height: 500px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:0px;
+    background-position: center;
+    background-color:black;
+}
+.indexphoto:hover .photoborder {
+   visibility: visible;
+}
+.indexphoto a{
+    color:white;
+}
+.photoborder {
+    background-color: rgba(0,0,0,0.5);
+    margin: 15px;
+    border: solid;
+    box-shadow: 0px 0px 5px 3px rgb(0,0,0);
+    border-color: white;
+    border-radius: 5px;
+    border-width: 10px;
+    width: 92%;
+    height: 90%;
+    visibility: hidden;
+}
+.photoborder h2{
+    padding-top:120px;
+}
+.guerra{
+    background-image: url(incontro2.jpg);
+}
+.differenze {
+    background-image: url(untitled.png);
+}
+.diritti {
+    background-image: url(diritti_violati.jpg);
+}
+.politica {
+    background-image: url(supermercato.jpg);
+}
+.info {
+    background-image: url(lab_nord2.jpg);
+}
+.azienda {
+    background-image: url(sede_samsung.jpg);
+}
+.inglese {
+    background-image: url(krx.jpg);
+}
+.italiano {
+    background-image: url(milano.jpg);
+}
+.db{
+    background-image: url(indicihome.jpg)
+}
+.mate {
+    background-image: url(lavagna_l.jpg)
+}

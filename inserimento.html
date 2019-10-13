@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Calcolatore indici</title>
+    <link rel="icon" href="icon.ico" />
+    <link href="stile.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body leftmargin="0" topmargin="0">
+    <div align="center">
+        <div class="sfondo-superiore bgsfondoindici">
+            <div class="header">
+                <ul id="nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li>
+                        <a class="attivo" href="#" title="argomenti">ARGOMENTI</a>
+                        <ul>
+                            <li><a href="guerra.html">Guerra di Corea</a></li>
+                            <li><a href="quasimodo.html">"Uomo del mio tempo"</a></li>
+                            <li><a href="istituzioni.html">Differenze istituzionali</a></li>
+                            <li><a href="diritti_umani.html">Diritti umani</a></li>
+                            <li><a href="mate.html">I Vincoli</a></li>
+                            <li><a href="sistema_economico.html">Capitalismo Autoritario</a></li>
+                            <li><a href="info.html">L'intranet Nord Coreano</a></li>
+                            <li><a href="azienda.html">Samsung</a></li>
+                            <li><a href="inglese.html">Korea Exchage</a></li>
+                            <li><a class="attivo" href="indexdb.html">Calcolatore Indici</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="corea.html" title="corea">PERCHÉ?</a></li>
+                </ul>
+            </div>
+            <div id="title">
+                <hr>
+                <h1><a href="index.html">TESINA | MICHELE CERRA</a></h1>
+            </div>
+            <h2>Calcolatore indici di bilancio</h2>
+        </div>
+        <div id="body">
+            <div id="aside">
+                <ul>
+                    <li><a href="guerra.html">Guerra di Corea</a></li>
+                    <li><a href="quasimodo.html">"Uomo del mio tempo"</a></li>
+                    <li><a href="istituzioni.html">Differenze istituzionali</a></li>
+                    <li><a href="diritti_umani.html">Diritti umani</a></li>
+                    <li><a href="mate.html">I Vincoli</a></li>
+                    <li><a href="sistema_economico.html">Capitalismo Autoritario</a></li>
+                    <li><a href="info.html">L'intranet Nord Coreano</a></li>
+                    <li><a href="azienda.html">Samsung</a></li>
+                    <li><a href="inglese.html">Korea Exchage</a></li>
+                    <li><a class="attivo" href="indexdb.html">Calcolatore Indici</a></li>
+                </ul>
+            </div>
+            <div id="section">
+                <br /><div id="form"><h1>Inserimento</h1>
+                          <form action="inserimento.php" method="get">
+                              <label>Ragione Sociale</label><input type="text" name="r_s" maxlength="30" autocomplete="off" />
+                              <label>Anno</label><input type="date" name="anno" value="AAAA/MM/GG" />
+                              <br />
+                              <br />
+                              <table border="1">
+                                  <tr>
+                                      <td>
+                                          <input type="radio" name="valuta" value="euro" checked> 
+                                      </td>
+                                      <td>Euro</td>
+                                      <td><input type="radio" name="valuta" value="won"> </td>
+                                      <td>Won</td>
+                                  </tr>
+                                  
+                               
+                              </table>
+                               
+                              
+                              <table>
+                                  <tr>
+                                      <td><label>Attivo Circolante</label></td>
+                                      <td><input type="text" name="ac" maxlength="15" /></td>
+                                      <td><label>Debiti a Breve</label></td>
+                                      <td><input type="text" name="db" maxlength="15" /></td>
+                                  </tr>
+                                  <tr>
+                                      <td><label>Disponibilità Liquida</label></td>
+                                      <td><input type="text" name="dl" maxlength="15" /></td>
+                                      <td><label>Debiti a Medio/Lungo</label></td>
+                                      <td><input type="text" name="dc" maxlength="15" /></td>
+                                  </tr>
+                                  <tr>
+                                      <td><label>Disponibilità Finanziaria</label></td>
+                                      <td><input type="text" name="df" maxlength="15" /></td>
+                                      <td><label>Capitale Proprio</label></td>
+                                      <td><input type="text" name="cp" maxlength="15" /></td>
+                                  </tr>
+                                  <tr>
+                                      <td><label>Totale Immobilizzazioni</label></td>
+                                      <td><input type="text" name="im" maxlength="15" /></td>
+                                      <td><label>Reddito effettivo</label></td>
+                                      <td><input type="text" name="re" maxlength="15" /></td>
+                                  </tr>
+                                  <tr>
+                                      <td><label>Ricavi di vendita</label></td>
+                                      <td><input type="text" name="rv" maxlength="15" /></td>
+                                      <td><label>Reddito Operativo</label></td>
+                                      <td><input type="text" name="ro" maxlength="15" /></td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2"><label>Totale Impieghi</label></td>
+                                      <td colspan="2"><input type="text" name="ti" maxlength="15" /></td>
+                                  </tr>
+                              </table>
+                              <input type="submit" value="Carica"><br /><br />
+                              <a href="indexdb.html">Torna alla home</a>
+                          </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            &copy; Michele Cerra 2018
+        </div>
+    </div>
+</body>
+</html>

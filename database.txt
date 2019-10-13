@@ -1,0 +1,60 @@
+mysql -uroot
+
+create database indici;
+
+create table rielaborati
+(id int(8) not null unique primary key,
+r_s char(30) not null,
+anno date not null,
+ac int(15) not null,
+dl int(15) not null,
+df int(15) not null,
+im int(15) not null,
+db int(15) not null,
+dc int(15) not null,
+cp int(15) not null,
+rv int(15) not null,
+ro int(15) not null,
+re int(15) not null,
+ti int(15) not null);
+
+describe rielaborati;
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| id    | int(8)   | NO   | PRI | NULL    |       |
+| r_s   | char(25) | NO   |     | NULL    |       |
+| anno  | date     | NO   |     | NULL    |       |
+| ac    | int(12)  | NO   |     | NULL    |       |
+| dl    | int(12)  | NO   |     | NULL    |       |
+| df    | int(12)  | NO   |     | NULL    |       |
+| im    | int(12)  | NO   |     | NULL    |       |
+| db    | int(12)  | NO   |     | NULL    |       |
+| dc    | int(12)  | NO   |     | NULL    |       |
+| cp    | int(12)  | NO   |     | NULL    |       |
+| rv    | int(12)  | NO   |     | NULL    |       |
+| ro    | int(12)  | NO   |     | NULL    |       |
+| re    | int(12)  | NO   |     | NULL    |       |
+| ti    | int(12)  | NO   |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+
+insert into rielaborati(id,r_s,anno,ac,dl,df,im,db,dc,cp,rv,ro,re,ti)
+values
+(1,"Rossi s.p.a","2010/12/31",1262900,212500,623500,1466300,291520,555280,1742600,4441700,254300,139800,2729200);
+
+select *
+from rielaborati;
++----+-------------+------------+---------+--------+--------+---------+--------+--------+---------+---------+--------+--------+---------+
+| id | r_s         | anno       | ac      | dl     | df     | im      | db     | dc     | cp      | rv      | ro     | re     | ti      |
++----+-------------+------------+---------+--------+--------+---------+--------+--------+---------+---------+--------+--------+---------+
+|  1 | Rossi s.p.a | 2010-12-31 | 1262900 | 212500 | 623500 | 1466300 | 291520 | 555280 | 1742600 | 4441700 | 254300 | 139800 | 2729200 |
++----+-------------+------------+---------+--------+--------+---------+--------+--------+---------+---------+--------+--------+---------+
+
+select re/cp*100 as "ROE %", ro/ti*100 as "ROI %", ro/rv*100 as "ROS %", rv/ti as "ROT", ti/cp as "Leverage", re/ro as "Incidenza gestione non caratteristica"
+from rielaborati
+where id=1;
++--------+--------+--------+--------+----------+---------------------------------------+
+| ROE %  | ROI %  | ROS %  | ROT    | Leverage | Incidenza gestione non caratteristica |
++--------+--------+--------+--------+----------+---------------------------------------+
+| 8.0225 | 9.3177 | 5.7253 | 1.6275 |   1.5662 |                                0.5497 |
++--------+--------+--------+--------+----------+---------------------------------------+
